@@ -1,0 +1,1 @@
+This GNU Radio module has to be linked to the liquid library written by Joe Gaeddert.  The liquid package is distributed separately and must be properly installed before building this GNU Radio module.  See https://github.com/jgaeddert/liquid-dsp.
