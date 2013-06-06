@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<block>
+  <name>fft</name>
+  <key>liquiddsp_fft</key>
+  <category>liquiddsp</category>
+  <import>import liquiddsp</import>
+  <make>liquiddsp.fft($size, $forward, $flags)</make>
+  <param>
+    <name>FFT Size</name>
+    <key>size</key>
+    <value>1024</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>FFT Direction</name>
+    <key>forward</key>
+    <type>enum</type>
+        <option>
+            <name>Forward</name>
+            <key>1</key>
+        </option>
+        <option>
+            <name>Reverse</name>
+            <key>0</key>
+        </option>
+  </param>
+  <param>
+    <name>FFT Flags (unused)</name>
+    <key>flags</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$size</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$size</vlen>
+  </source>
+</block>
