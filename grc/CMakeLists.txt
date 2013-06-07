@@ -18,5 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    liquiddsp_fft.xml DESTINATION share/gnuradio/grc/blocks
+    liquiddsp_fft.xml
+    liquiddsp_iir_filter_ccf.xml DESTINATION share/gnuradio/grc/blocks
 )

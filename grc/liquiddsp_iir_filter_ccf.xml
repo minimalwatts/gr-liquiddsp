@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<block>
+    <name>IIR Filter</name>
+    <key>liquiddsp_iir_filter_ccf</key>
+    <category>liquiddsp</category>
+    <import>import liquiddsp</import>
+    <make>liquiddsp.iir_filter_ccf($fftaps, $fbtaps)</make>
+    <param>
+        <name>Feed-forward Taps (b coeffs)</name>
+        <key>fftaps</key>
+        <type>real_vector</type>
+    </param>
+    <param>
+        <name>Feedback Taps (a coeffs)</name>
+        <key>fbtaps</key>
+        <type>real_vector</type>
+    </param>
+    <sink>
+        <name>in</name>
+        <type>complex</type>
+    </sink>
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+</block>

@@ -27,6 +27,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND liquiddsp_sources
     fft_impl.cc
+    iir_filter_ccf_impl.cc
 )
 
 add_library(gnuradio-liquiddsp SHARED ${liquiddsp_sources})

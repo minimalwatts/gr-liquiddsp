@@ -22,5 +22,6 @@
 ########################################################################
 install(FILES
     api.h
-    fft.h DESTINATION include/liquiddsp
+    fft.h
+    iir_filter_ccf.h DESTINATION include/liquiddsp
 )
